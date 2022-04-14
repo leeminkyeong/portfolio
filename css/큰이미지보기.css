@@ -103,23 +103,60 @@ a {text-decoration: none; color: #333;}
 .about .cont .info div {
     width: 45%;
     margin: 20px 0;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 .about .cont .info div h4 {
+    margin-bottom: 20px;
     font-size: 30px;
 }
 .about .cont .info div p {
     font-size: 20px;
+    margin-bottom: 5px;
 }
-.about .cont .info div:nth-child(2) dt {
+.about .cont .info dl dt {
+    margin-bottom: 5px;
     font-size: 20px;
     font-weight: bold;
 }
 .about .cont .info div dd {
     font-size: 20px;
 }
-.about .cont .info div:nth-child(3) dt {
-    font-size: 20px;
+
+/* footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+footer ul li {
+    /* 가로 : 280px
+    세로 : 50px
+    글자 수직가운데정렬
+    테두리 : 1px solid 색상
+    모서리곡선 :50px
+    외부여백 : 위아래 10px 좌우 자동 */
+    width: 280px;
+    height: 50px;
+    line-height: 50px;    
+    border-radius: 50px;
+    border: 1px solid #fff;
+    margin: 10px auto;
+}
+footer ul li a {color: #fff;}
+footer ul li:first-child {
+    background-color: rgb(47, 47, 225);
     font-weight: bold;
 }
+footer ul li:first-child a {
+    /* 글자색상 조절 */
+    color: aqua;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.617);
+}
+
+
 
