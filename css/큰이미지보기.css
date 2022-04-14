@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+.g_ver05 {
+    background-color: #eee;
+    padding: 100px 0;
+}
+.g_ver05 .title {
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+.g_ver05 .title h3 {
+    font-size: 45px;
+}
+.g_ver05 .title p {
+    font-size: 20px;
+}
+.g_ver05 .title em {
+    /* 글자크기 : 13px
+    텍스트 오른쪽 정렬
+    외부여백 위로 40px
+    외부여백 아래로 10px */
+    font-size: 13px;
+    text-align: right;
+    margin: 40px 0 10px;
+    display: block;
+}
+.g_ver05 .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between /* 양끝에 붙여서 정렬 */
+}
+.g_ver05 .cont .items {
+    width: 49%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* 한줄일 때 수직정렬 : 가운데 */
+    
+}
+.g_ver05 .cont .items figure {
+    /* 가로 : 60% 
+    세로 : 500px */
+    width: 60%;
+    height: 500px;
+}
+.g_ver05 .cont .items figure img {
+    /* figure가 가진 가로 세로영역 딱 
+    맞게 넣고 비율에 맞춰 전체 덮이도록
+    설정 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g_ver05 .cont .items .info {
+    /* 가로 : 40%
+    내부여백-왼쪽 20px
+    여백을 포함해서 가로값 잡히도록 설정 */
+    width: 40%;
+    padding-left: 20px;
+    box-sizing: border-box;  
+}
+.g_ver05 .cont .items .info p {
+    /* 글자크기 : 14px */
+    font-size: 14px;
+}
+.g_ver05 .cont .items .info h4 {
+    font-size: 30px;
+    /* 다른컨텐츠에 있는 h4크기와 동일하게 작성 */
+}
+
+/* .about */
+
+.about {
+    padding: 100px 0;
+}
+.about .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.about .cont figure {
+    width: 30%;
+    height: 500px;
+}
+.about .cont figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about .cont .info {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .cont .info div {
+    width: 45%;
+    margin: 20px 0;
+    background-color: antiquewhite;
+}
+.about .cont .info div h4 {
+    font-size: 30px;
+}
+.about .cont .info div p {
+    font-size: 20px;
+}
+.about .cont .info div:nth-child(2) dt {
+    font-size: 20px;
+    font-weight: bold;
+}
+.about .cont .info div dd {
+    font-size: 20px;
+}
+.about .cont .info div:nth-child(3) dt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
