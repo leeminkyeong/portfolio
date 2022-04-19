@@ -12,6 +12,12 @@ html, body {
 header {
     height: 80px;
     line-height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0; /* p-t 브라우저 고정 */
+    width: 100%;
+    background-color: #fff;
+    z-index: 9; /* 없어졌던게 다시 나타남 로고부분 */
 }
 header div {
     width: 1280px;
@@ -62,23 +68,28 @@ header div a {
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    color: #333;
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
     margin-bottom: 40px;
+    color: #333;
 }
 .main_visual .title a {
-    color: #fff;
+    color: #333;
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: rgb(255, 147, 147);
+    background-color: #fff;
     text-align: center;
+    display: block;
+    border-radius: 40px;
 }
 
 /* .best_v */
 .best_v {
+    /* background: url('../images/파일명,확장자명'); */
     padding: 100px 0;
 }
 .best_v .title {
@@ -155,9 +166,11 @@ header div a {
     display: block;
     padding: 0 25px;
     margin-right: 10px;
+    margin-top: 10px;
 }
+
 .best_v .cont .info ul li:nth-child(1) a {
-    background-color: rgb(255, 147, 147);
+    background-color: rgba(51, 51, 51, 0.723);
     color: #fff;
     border: none;
 }
@@ -190,12 +203,14 @@ header div a {
     padding: 0 30px; /* 좌우여백 늘이기 */
     margin: 0 5px;
     box-sizing: border-box;
+    
 }
 .motion .list li.on {
-    box-shadow: 2px 3px 15px rgba(253, 205, 205, 0.273);
+    /* box-shadow: 2px 3px 15px ; */
     /* 그림자 : x축 y축 블러(퍼진 정도) 색상 */
-    background-color: rgb(253, 205, 205);
+    background-color: #333;
     color: #fff;
+    /* border: 0; */
     border: 0;
 }
 .motion .motion_cont .list_cont {
